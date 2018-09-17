@@ -40,3 +40,30 @@ CREATE TABLE account_type (
   id SERIAL PRIMARY KEY,
   card_id INTEGER REFERENCES account.id
 );
+
+CREATE TABLE transaction (
+  id SERIAL PRIMARY KEY,
+  source_account_id INTEGER REFERENCES account.id,
+  target_account_id INTEGER REFERENCES account.id,
+  value BIGINT,
+  date TIMESTAMP
+);
+
+CREATE TABLE user_account (
+  user_id SERIAL PRIMARY KEY,
+  account_id INTEGER REFERENCES account.ud
+);
+
+CREATE TABLE user (
+  id SERIAL PRIMARY KEY,
+  login TEXT,
+  password TEXT
+);
+
+CREATE TABLE user_data (
+  user_id INTEGER REFERENCES user.id,
+  first_name TEXT,
+  last_name TEXT,
+  address TEXT,
+  phone_number TEXT
+);
