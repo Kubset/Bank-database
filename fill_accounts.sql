@@ -1,3 +1,4 @@
+INSERT INTO accounts (id, balance, available, type_id) VALUES (0, 0, 0, 0);
 insert into accounts (id, balance, available, type_id) values (10000, 0, 0, 1);
 insert into accounts (id, balance, available, type_id) values (9999, 0, 0, 1);
 insert into accounts (id, balance, available, type_id) values (9998, 0, 0, 2);
