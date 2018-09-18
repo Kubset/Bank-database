@@ -1,3 +1,4 @@
+
 insert into credits (id, account_id, balance, principle, date, rate) values (2, 886, 26700000, 18800000, '2/12/2017', 4.76);
 insert into credits (id, account_id, balance, principle, date, rate) values (3, 378, 10900000, 1000000, '10/26/2018', 4.7);
 insert into credits (id, account_id, balance, principle, date, rate) values (4, 931, 22500000, 19100000, '12/21/2016', 5.02);
