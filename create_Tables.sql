@@ -4,7 +4,6 @@ CREATE TABLE IF NOT EXISTS users (
   password TEXT
 );
 
-
 CREATE TABLE IF NOT EXISTS user_data (
   user_id INTEGER REFERENCES users,
   first_name TEXT,
@@ -25,9 +24,8 @@ CREATE TABLE IF NOT EXISTS  account_types (
 
 CREATE TABLE IF NOT EXISTS accounts (
   id SERIAL PRIMARY KEY,
-  user_id INTEGER REFERENCES users,
   balance BIGINT NOT NULL,
-  avalible BIGINT NOT NULL,
+  available BIGINT NOT NULL,
   type_id INTEGER REFERENCES account_types
 );
 
@@ -38,10 +36,6 @@ valid_from DATE NOT NULL,
 expire DATE NOT NULL,
 type_id INTEGER REFERENCES card_types
 );
-
-
-
-
 
 CREATE TABLE IF NOT EXISTS  user_accounts (
   user_id SERIAL PRIMARY KEY,
@@ -65,8 +59,6 @@ CREATE TABLE IF NOT EXISTS  deposits (
   date DATE NOT NULL,
   rate FLOAT NOT NULL
 );
-
-
 
 CREATE TABLE IF NOT EXISTS  transactions (
   id SERIAL PRIMARY KEY,
