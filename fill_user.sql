@@ -1,4 +1,3 @@
-
 insert into users (id, login, password) values (1, 'AM2xgbM6', 'rmxGvP3x');
 insert into users (id, login, password) values (2, '6XWPRTp7', 'pi8BrxCS');
 insert into users (id, login, password) values (3, 'Mh8R2kuG', 'NXPXo1qT');
