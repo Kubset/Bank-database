@@ -2,3 +2,5 @@
 .idea/Bank-database.iml
 .idea/modules.xml
 .idea/workspace.xml
+run_scripts.sql
+run_scripts_bart.sql
