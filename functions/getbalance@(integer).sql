@@ -1,4 +1,4 @@
-create function getbalance(userid integer)
+create or replace function getbalance(userid integer)
   returns integer
 language plpgsql
 as $$

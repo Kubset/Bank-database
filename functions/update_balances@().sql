@@ -1,4 +1,4 @@
-create function update_balances()
+create or replace function update_balances()
   returns trigger
 language plpgsql
 as $$
