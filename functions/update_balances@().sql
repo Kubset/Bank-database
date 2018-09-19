@@ -12,5 +12,5 @@ END;
 $$;
 
 alter function update_balances()
-  owner to postgres;
+  owner to bartoszjakub;
 
