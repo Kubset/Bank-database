@@ -58,7 +58,8 @@ CREATE TABLE IF NOT EXISTS  deposits (
   balance BIGINT NOT NULL,
   principle BIGINT NOT NULL,
   date DATE NOT NULL,
-  rate FLOAT NOT NULL
+  rate FLOAT NOT NULL,
+  length INTEGER NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS  transactions (
