@@ -1,4 +1,4 @@
-create function sum_credits(target_account_id integer)
+create or replace function sum_credits(target_account_id integer)
   returns integer
 language plpgsql
 as $$
@@ -16,5 +16,5 @@ DECLARE
 $$;
 
 alter function sum_credits(integer)
-  owner to bartoszjakub;
+  owner to postgres;
 
