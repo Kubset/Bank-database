@@ -1,4 +1,4 @@
-create function check_balance_before_deposit()
+create or replace function check_balance_before_deposit()
   returns trigger
 language plpgsql
 as $$
