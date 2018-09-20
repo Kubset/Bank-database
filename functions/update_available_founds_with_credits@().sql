@@ -1,4 +1,4 @@
-create function update_available_founds_with_credits()
+create or replace function update_available_founds_with_credits()
   returns void
 language plpgsql
 as $$
@@ -18,5 +18,5 @@ END;
 $$;
 
 alter function update_available_founds_with_credits()
-  owner to bartoszjakub;
+  owner to postgres;
 
