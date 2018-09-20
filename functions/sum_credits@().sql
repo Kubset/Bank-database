@@ -16,5 +16,5 @@ DECLARE
 $$;
 
 alter function sum_credits(integer)
-  owner to postgres;
+  owner to bartoszjakub;
 

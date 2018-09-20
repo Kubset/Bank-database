@@ -38,7 +38,7 @@ type_id INTEGER REFERENCES card_types
 );
 
 CREATE TABLE IF NOT EXISTS  user_accounts (
-  user_id SERIAL PRIMARY KEY,
+  user_id INTEGER references users,
   account_id INTEGER REFERENCES accounts
 );
 

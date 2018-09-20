@@ -1,4 +1,4 @@
-create function create_account()
+create or replace function create_account()
   returns trigger
 language plpgsql
 as $$
@@ -13,5 +13,5 @@ END;
 $$;
 
 alter function create_account()
-  owner to postgres;
+  owner to bartoszjakub;
 

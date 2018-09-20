@@ -38,5 +38,5 @@ END;
 $$;
 
 alter function getbalance(integer)
-  owner to postgres;
+  owner to bartoszjakub;
 

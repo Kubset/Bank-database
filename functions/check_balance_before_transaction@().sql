@@ -19,4 +19,4 @@ DECLARE
 $$;
 
 alter function check_balance_before_transaction()
-  owner to postgres;
+  owner to bartoszjakub;
