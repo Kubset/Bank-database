@@ -44,8 +44,7 @@ CREATE TABLE IF NOT EXISTS  user_accounts (
 
 CREATE TABLE IF NOT EXISTS  credits (
   id SERIAL PRIMARY KEY,
-  account_id INTEGER REFERENCES accounts,
-  balance BIGINT NOT NULL,
+  credit_account_id INTEGER REFERENCES accounts,
   principle BIGINT NOT NULL,
   date DATE NOT NULL,
   rate FLOAT NOT NULL,
@@ -54,8 +53,7 @@ CREATE TABLE IF NOT EXISTS  credits (
 
 CREATE TABLE IF NOT EXISTS  deposits (
   id SERIAL PRIMARY KEY,
-  account_id INTEGER REFERENCES accounts,
-  balance BIGINT NOT NULL,
+  deposit_account_id INTEGER REFERENCES accounts,
   principle BIGINT NOT NULL,
   date DATE NOT NULL,
   rate FLOAT NOT NULL,
